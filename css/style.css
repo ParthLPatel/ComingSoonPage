@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  border: 1px solid orange;
   padding: 1.6em;
   display: flex;
   flex-direction: column;
