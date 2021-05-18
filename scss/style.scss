@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+    border: 1px solid orange;
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        margin: 1.6em;
+    }
+    .heading{
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 1em;
+        color: hsl(0, 0%, 59%);
+        span{
+            font-weight: 700;
+            color: hsl(209, 33%, 12%);
+        }
+    }
+    .subheading{
+        font-weight: 300;
+        color: hsl(209, 33%, 12%);
+        margin-bottom: 2.4em;
+    }
+
+    input[type="email"], input[type="submit"]{
+        width: 100%;
+        border-radius: 18px;
+    }
+    input[type="email"]{
+        padding: 0.8em;
+        border: 1px solid hsl(223, 100%, 88%);
+        margin-bottom: 0.8em;
+   
+
+        &:hover{
+            border: 0.8px solid hsl(354, 100%, 66%);
+        }   
+
+    }
+    input[type="submit"]{
+        padding: 0.8em;
+        color: white;
+        background-color: hsl(223, 87%, 63%);
+        border: 1px solid white;
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 255, .15%);
+
+        &:hover{
+            background-color: hsl(223, 74%, 50%);
+            cursor: pointer;
+        }
+    }
+
+    .dashboard-img{
+        object-fit: cover;
+        max-width: 100%;
+        margin: 2.4em 0.8em 3.2em 0.8em;
+        // border: 1px solid black;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+
+        .links{
+            color: hsl(223, 87%, 63%);
+        }
+        
+        i{
+            margin: 0.8em;
+            border-radius: 50%;
+            padding: 0.6em;
+
+            &:hover{
+                cursor: pointer;
+                color: hsl(223, 74%, 50%);
+            }
+        }
+    }
+    footer p{
+        color: hsl(0, 0%, 59%);
+    }
+}
+
+
+
+@import "desktop";

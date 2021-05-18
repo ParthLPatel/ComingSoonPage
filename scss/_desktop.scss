@@ -1,0 +1,34 @@
+@media screen and (min-width: 900px){
+    .container{
+
+        .heading{
+            font-size: 32px;
+            margin-bottom: 0.8em;
+        }
+        .subheading{
+            margin-bottom: 1.6em;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            input[type="email"]{
+                width: 70%;
+                height: 3em;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            input[type="submit"]{
+                margin-left: 0.8em;
+                width: 30%;
+                height: 3.2em;
+            }
+        }
+        .dashboard-img{
+            max-width: 40%;
+            margin: 1em;
+        }
+    }
+}
