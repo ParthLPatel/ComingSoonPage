@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  border: 1px solid orange;
+  padding: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .logo {
+  margin: 1.6em;
+}
+
+.container .heading {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 1em;
+  color: #969696;
+}
+
+.container .heading span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.container .subheading {
+  font-weight: 300;
+  color: #151f29;
+  margin-bottom: 2.4em;
+}
+
+.container input[type="email"], .container input[type="submit"] {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.container input[type="email"] {
+  padding: 0.8em;
+  border: 1px solid #c2d3ff;
+  margin-bottom: 0.8em;
+}
+
+.container input[type="email"]:hover {
+  border: 0.8px solid #ff5263;
+}
+
+.container input[type="submit"] {
+  padding: 0.8em;
+  color: white;
+  background-color: #4f7df3;
+  border: 1px solid white;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 255, 0.15);
+}
+
+.container input[type="submit"]:hover {
+  background-color: #2157de;
+  cursor: pointer;
+}
+
+.container .dashboard-img {
+  object-fit: cover;
+  max-width: 100%;
+  margin: 2.4em 0.8em 3.2em 0.8em;
+}
+
+.container .social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.container .social-media .links {
+  color: #4f7df3;
+}
+
+.container .social-media i {
+  margin: 0.8em;
+  border-radius: 50%;
+  padding: 0.6em;
+}
+
+.container .social-media i:hover {
+  cursor: pointer;
+  color: #2157de;
+}
+
+.container footer p {
+  color: #969696;
+}
+
+@media screen and (min-width: 900px) {
+  .container .heading {
+    font-size: 32px;
+    margin-bottom: 0.8em;
+  }
+  .container .subheading {
+    margin-bottom: 1.6em;
+  }
+  .container form {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+  .container form input[type="email"] {
+    width: 70%;
+    height: 3em;
+  }
+  .container form input[type="email"]:focus {
+    outline: none;
+  }
+  .container form input[type="submit"] {
+    margin-left: 0.8em;
+    width: 30%;
+    height: 3.2em;
+  }
+  .container .dashboard-img {
+    max-width: 40%;
+    margin: 1em;
+  }
+}
